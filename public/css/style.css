@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.sidebar {
+
+  width: 250px;
+  height: 100vh;
+  background: #2C3E50;
+  color: white;
+  position: fixed;
+  padding-top: 20px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar Collapsed */
+.sidebar.collapsed {
+  width: 90px; /* Partially collapsed sidebar */
+  
+}
+
+.sidebar-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 0;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+.sidebar-menu li { /* Just the list */
+  list-style: none;
+  padding: 0px 0px 0px 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-menu li:hover { /* Gold color */
+  transform: translateX(8px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.sidebar-menu li a {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar-menu li a i {
+  width: 30px;
+  text-align: center;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar-menu li:hover a i {
+  color: #03fce8; /* Gold color */
+}
+
+/* Hide Text When Sidebar is Collapsed */
+.sidebar.collapsed .sidebar-text {
+  display: none;
+}
+
+/* Main Content (Expands When Sidebar Collapses) */
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  flex-grow: 1;
+  transition: margin-left 0.3s ease;
+  width: calc(100% - 250px); /* Adjust width based on sidebar */
+}
+
+/* When Sidebar is Collapsed, Expand Content */
+.sidebar.collapsed + .main-content {
+  margin-left: 90px;
+  width: calc(100% - 90px);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ECF0F1;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Sidebar Toggle Button */
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Dashboard Cards */
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}

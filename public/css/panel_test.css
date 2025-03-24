@@ -1,0 +1,18 @@
+/* Charts */
+.chart-container {
+    margin-top: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    height: 600px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensures the chart canvas does not exceed container size */
+.chart-container canvas {
+    max-width: 100%;
+    max-height: 100%;
+}

@@ -1,0 +1,10 @@
+.card:hover i {
+    color:gold;
+    transform: rotate(5deg) translateY(-5px);
+}
+
+.card:hover {
+    background-color: rgb(0, 143, 143);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 255, 255);
+}
