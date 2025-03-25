@@ -101,6 +101,13 @@ body {
   border-radius: 8px;
 }
 
+.navbar h2 {
+  margin-right: 20px;
+}
+.navbar i {
+  margin-left: 20px;
+}
+
 /* Sidebar Toggle Button */
 .toggle-btn {
   background: none;

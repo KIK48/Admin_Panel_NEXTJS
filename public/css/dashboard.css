@@ -1,13 +1,13 @@
 
 
-.card-container {
+ .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.card {
+ .admin-card {
     width: 200px;
     height: 200px; /* Set a fixed height */
     border: 1px solid #ddd;
@@ -23,12 +23,12 @@
     
 }
 
-.card p {
+ .admin-card p {
     font-size: 14px;
     color: white;
 }
 
-.card h3 {
+ .admin-card h3 {
     height: 40px; /* Ensures consistent height */
     overflow: hidden;
     display: -webkit-box;
@@ -45,7 +45,7 @@
     word-wrap: break-word;
 }
 
-.card i {
+ .admin-card i {
     font-size: 50px; /* Adjust size */
     color: aqua;  /* Change color */
     margin-bottom: 10px;
@@ -55,7 +55,7 @@
 }
 
 /* Remove default link styles */
-.card-link {
+ .admin-card-link {
     text-decoration: none; /* Remove blue underline */
     color: inherit; /* Keep text color the same */
     display: inline-block;
