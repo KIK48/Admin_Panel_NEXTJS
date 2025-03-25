@@ -16,6 +16,7 @@ const menuItems = [
 export default function Sidebar({ isCollapsed }) {
   const router = useRouter();
 
+
   return (
     <div id="sidebar" className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
       {/* Sidebar Header */}
@@ -25,7 +26,9 @@ export default function Sidebar({ isCollapsed }) {
 
       {/* Menu */}
       <ul className="sidebar-menu">
+
         {menuItems.map((item) => (
+
           <li key={item.url}>
             <Link href={item.url} legacyBehavior>
 
