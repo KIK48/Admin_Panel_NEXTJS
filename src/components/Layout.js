@@ -35,6 +35,11 @@ export default function Layout({ children }) {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
+        <link 
+          rel = "stylesheet"
+          href = "https://img.icons8.com/ios/50/cash-app.png"
+        />
+        <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-cash app-ios7-16.png"></link>
       </Head>
 
       <div className="d-flex">

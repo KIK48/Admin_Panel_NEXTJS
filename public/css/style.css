@@ -108,6 +108,7 @@ body {
   background: #ECF0F1;
   padding: 15px;
   border-radius: 8px;
+  
 }
 
 .navbar h2 {
@@ -132,3 +133,6 @@ body {
   flex-wrap: wrap;
   margin-top: 20px;
 }
+
+
+

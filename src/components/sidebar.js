@@ -9,7 +9,7 @@ const menuItems = [
   { title: 'Dashboard', url: '/', icon: 'bi-house-door' },
   { title: 'Management', url: '/management', icon: 'bi-database' },
   { title: 'Tables', url: '/tables', icon: 'bi-diagram-3' },
-  { title: 'Panel Test', url: '/panel_test', icon: 'bi-people' },
+  { title: 'Payer Dues', url: '/payerdue', icon: 'bi bi-cash' },
   { title: 'Settings', url: '/settingsPg', icon: 'bi-gear' },
 ];
 
