@@ -1,10 +1,41 @@
-.card:hover i {
+.management-section .admin-card:hover i {
     color:gold;
     transform: rotate(5deg) translateY(-5px);
 }
 
-.card:hover {
+.management-section .admin-card:hover {
     background-color: rgb(0, 143, 143);
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0, 255, 255);
 }
+
+.svg-icons {
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 50px;
+    height: 50px;
+    fill: aqua;
+    transition: fill 2s ease, transform 0.3s ease;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  
+  
+  .svg-border {
+    fill: aqua;
+    transition: fill 2s ease-in-out, transform 0.3s ease; 
+  }
+  
+  .admin-card:hover .svg-border {
+    fill: gold;
+    transform: none;
+  }
+  
+  .admin-card:hover .svg-icons {
+    fill:gold;
+    transform: rotate(5deg) translateY(-4px);
+  }
+  
+ 
+
+  

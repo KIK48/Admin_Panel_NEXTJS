@@ -91,6 +91,15 @@ body {
   width: calc(100% - 90px);
 }
 
+.sidebar-menu .active {
+  background-color: rgb(0, 143, 143);
+  border-radius: 5px;
+}
+
+.sidebar-menu .nav-link.active i {
+  color: gold;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -99,6 +108,14 @@ body {
   background: #ECF0F1;
   padding: 15px;
   border-radius: 8px;
+  
+}
+
+.navbar h2 {
+  margin-right: 20px;
+}
+.navbar i {
+  margin-left: 20px;
 }
 
 /* Sidebar Toggle Button */
@@ -116,3 +133,6 @@ body {
   flex-wrap: wrap;
   margin-top: 20px;
 }
+
+
+
