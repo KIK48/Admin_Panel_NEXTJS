@@ -1,14 +1,21 @@
 // src/components/Layout.js
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Sidebar from './sidebar';
 import Navbar from './navbar';
 import Head from 'next/head'
 
 export default function Layout({ children }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const [sidebarColor, setSidebarColor] = useState('var(--gold)');
 
   const toggleSidebar = () => setIsCollapsed((prev) => !prev);
+  useEffect(() => {
+    const savedColor = localStorage.getItem('sidebarColor');
+    if (savedColor) {
+      setSidebarColor(savedColor);
+    }
+  },[]);
 
   return (
     <>
@@ -21,6 +28,7 @@ export default function Layout({ children }) {
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/dashboard.css" />
         <link rel="stylesheet" href="/css/card.css" />
+        <link rel="stylesheet" href="/css/settings.css"></link>
 
         {/* Bootstrap and icons */}
         <link
@@ -43,7 +51,7 @@ export default function Layout({ children }) {
       </Head>
 
       <div className="d-flex">
-        <Sidebar isCollapsed={isCollapsed}/>
+        <Sidebar isCollapsed={isCollapsed} sidebarColor={sidebarColor}/>
 
         <div id="main-content" className="main-content flex-grow-1">
         <Navbar toggleSidebar={toggleSidebar} username="KIK48" />

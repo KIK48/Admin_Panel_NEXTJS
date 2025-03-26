@@ -18,7 +18,7 @@ export default function Sidebar({ isCollapsed }) {
 
 
   return (
-    <div id="sidebar" className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
+    <div id="sidebar" className={`sidebar ${isCollapsed ? 'collapsed' : ''}`} style={{ backgroundColor: '--sidebar-color' }}>
       {/* Sidebar Header */}
       <div className="sidebar-header">
         <h2 id="sidebar-logo">ALPHA PHI ALPHA</h2>

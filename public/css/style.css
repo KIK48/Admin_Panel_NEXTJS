@@ -23,8 +23,8 @@ body {
   text-align: center;
   width: 250px;
   height: 100vh;
-  background: var(--gold);
-  color: white;
+  background: var(--sidebar-color);
+  color: var(--sidebar-text-color);
   position: fixed;
   padding-top: 20px;
   transition: width 0.3s ease;
