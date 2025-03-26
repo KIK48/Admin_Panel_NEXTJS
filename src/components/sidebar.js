@@ -9,7 +9,7 @@ const menuItems = [
   { title: 'Dashboard', url: '/', icon: 'bi-house-door' },
   { title: 'Management', url: '/management', icon: 'bi-database' },
   { title: 'Tables', url: '/tables', icon: 'bi-diagram-3' },
-  { title: 'Payer Dues', url: '/payerdue', icon: 'bi bi-cash' },
+  { title: 'Pay Your Dues', url: '/payerdue', icon: 'bi bi-cash' },
   { title: 'Settings', url: '/settingsPg', icon: 'bi-gear' },
 ];
 
@@ -21,7 +21,7 @@ export default function Sidebar({ isCollapsed }) {
     <div id="sidebar" className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
       {/* Sidebar Header */}
       <div className="sidebar-header">
-        <h2 id="sidebar-logo">ZHEA</h2>
+        <h2 id="sidebar-logo">ALPHA PHI ALPHA</h2>
       </div>
 
       {/* Menu */}
