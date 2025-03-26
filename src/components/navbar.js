@@ -6,7 +6,7 @@ export default function Navbar({ toggleSidebar, username = "User" }) {
       <button onClick={toggleSidebar} className="toggle-btn">
         <i className="fas fa-bars"></i>
       </button>
-      <h2>Welcome, {username}!</h2>
+      {/* <h2>Welcome, {username}!</h2> comminted out for right now will bring back in development*/}
     </nav>
   );
 }

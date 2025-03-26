@@ -8,8 +8,7 @@ export default function Panel_Test() {
       <div id="management-section" className="management-section card-container">
         <div className="admin-card">
         <i className="bi bi-paypal"></i>
-        <h3>2500</h3>
-        <p>Paypal</p>
+        <h3>Paypal</h3>
         </div>
       
       
@@ -26,9 +25,7 @@ export default function Panel_Test() {
             />
             </svg>
             </div>
-          
-          <h3>2500</h3>
-          <p>Cash App</p>
+          <h3>Cash App</h3>
         </div>
       
       
@@ -52,8 +49,7 @@ export default function Panel_Test() {
           </path>
         </svg>
         </div>
-        <h3>2500</h3>
-        <p>Zelle</p>
+        <h3>Zelle</h3>
         </div>
       </div>
     </Layout>
