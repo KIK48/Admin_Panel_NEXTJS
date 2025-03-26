@@ -45,7 +45,7 @@
     white-space: normal;
     word-wrap: break-word;
 }
- .admin-card svg,
+.admin-card svg,
  .admin-card i {
     font-size: 50px; /* Adjust size */
     color: aqua;  /* Change color */
